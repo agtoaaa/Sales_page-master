@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title>Menu</title>
+		<style>
+			ul li {list-style: none;margin-top: 20px;}
+			a {padding:5px 40px 5px 40px;background-color:none;border:white 1px solid;color:white; text-decoration: none;}
+			a:hover {background-color:white;color:#1c1c1c;}
+			.menu {height:100%;width:185px;padding:10px 30px 30px 30px;position:relative;margin-left:auto;margin-right: auto;margin-top:0;display:none;border:1px solid white;}
+			.ham {width:40px;border-top:solid white 5px;margin-top:7px;}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('.hamburger').click(function() {
+				$('.menu').slideToggle("fast");
+			});
+		});
+		</script>
+
+	</head>
+
+<body style="background-color:black;">
+	<div class="hamburger">
+		<div class="ham"></div>
+		<div class="ham"></div>
+		<div class="ham"></div>
+	</div>
+	<ul class="menu">
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+	</ul>
+
+</body>
+
+</html> 
